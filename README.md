@@ -1,1 +1,6 @@
 # DCGAN-on-MNIST-DATASET
+
+Deep Convolutional Generative Adversarial Networks (DCGAN) has proven to be a great success in generating images. DCGAN is implemented on the MNIST handwritten digit dataset. In this project, the MNIST dataset which has the dimensions 28x28 was transformed into 64x64 and normalized for the better results. This scaled data was then fed into a discriminator along with the random noise for training. Later, the generator was trained on the random noise by integrating to the discriminator’s output between the real and fake images. In the  DCGAN the discriminator was implemented using convolution networks and the generator was implemented using deconvolution networks. Popular activation functions ReLu and Leaky ReLu were used to increase the non-linearity of the networks. Binary Cross-Entropy loss function was used to estimate the loss since the discriminator has to classify only between real and fake images.
+
+The goal of this project is to develop a neural network system that can take the handwritten digit images and generate new images that are similar to the input images.
+It is also focused on diminishing the loss of both the discriminator and the generator. So that generator can understand better about the discriminator and produce the outputs that are of mere resemblance to the input images. 
